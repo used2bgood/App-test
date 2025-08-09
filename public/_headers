@@ -1,1 +1,2 @@
-/*\n  Content-Security-Policy: frame-ancestors 'self' https://apprasure.com https://*.apprasure.com;
+/*
+  Content-Security-Policy: frame-ancestors 'self' https://apprasure.com https://*.apprasure.com;
