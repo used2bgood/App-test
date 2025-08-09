@@ -1,6 +1,9 @@
-import { useLocation } from 'react-router-dom';
-function App({ embed = false }) {
-  const { pathname } = useLocation();
-  const isEmbed = embed || pathname.startsWith('/embed');
-  return <Pages embed={isEmbed} />;
-}
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/embed" element={<App embed />} />
+    </Routes>
+  </BrowserRouter>
+);
